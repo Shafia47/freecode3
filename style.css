@@ -1,0 +1,73 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;  /* Ensures the navbar stays at the left edge */
+    width: 200px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 100vh;  /* Ensures the navbar spans the full viewport height */
+    overflow-y: auto;  /* Adds scroll if content overflows */
+}
+
+#navbar header {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+#main-doc {
+    margin-left: 220px;  /* Creates space for the fixed navbar */
+    padding: 20px;
+    width: 70%;
+}
+
+.main-section {
+    margin-bottom: 30px;
+}
+
+.main-section header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    #main-doc {
+        margin-left: 0;
+        width: 100%;
+    }
+}

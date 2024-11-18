@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Overview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <header>Machine Learning Overview</header>
+        <a href="#Introduction_to_ML" class="nav-link">Introduction to ML</a>
+        <a href="#Supervised_vs_Unsupervised_Learning" class="nav-link">Supervised vs Unsupervised Learning</a>
+        <a href="#Model_Evaluation" class="nav-link">Model Evaluation</a>
+        <a href="#Common_Algorithms" class="nav-link">Common Algorithms</a>
+        <a href="#Overfitting_and_Underfitting" class="nav-link">Overfitting and Underfitting</a>
+        <a href="#Data_Preprocessing" class="nav-link">Data Preprocessing</a>
+    </nav>
+
+    <!-- Main Documentation -->
+    <main id="main-doc">
+        
+        <section class="main-section" id="Introduction_to_ML">
+            <header>Introduction to ML</header>
+            <p>Machine Learning enables systems to learn from data and make predictions.</p>
+            <p>Examples include image recognition, language translation, and self-driving cars.</p>
+            <p>It relies on data and algorithms to improve over time without explicit programming.</p>
+            <code>import sklearn</code>
+        </section>
+        
+        <section class="main-section" id="Supervised_vs_Unsupervised_Learning">
+            <header>Supervised vs Unsupervised Learning</header>
+            <p>Supervised Learning uses labeled data for training.</p>
+            <p>Unsupervised Learning works with unlabeled data, finding patterns.</p>
+            <ul>
+                <li><strong>Supervised Learning</strong>: Examples include classification and regression.</li>
+                <li><strong>Unsupervised Learning</strong>: Examples include clustering and association.</li>
+                <li><code>model.fit(X_train, y_train)</code></li>
+            </ul>
+            <p>Choosing the right method depends on the data and the problem type.</p>
+        </section>
+        
+        <section class="main-section" id="Model_Evaluation">
+            <header>Model Evaluation</header>
+            <p>Evaluating a model is essential to understand its performance.</p>
+            <ul>
+                <li><code>Accuracy</code>: Percentage of correct predictions.</li>
+                <li><code>Precision</code> and <code>Recall</code>: Useful for imbalanced datasets.</li>
+                <li><code>F1 Score</code>: Balances precision and recall.</li>
+            </ul>
+            <p>Cross-validation can ensure reliability across datasets.</p>
+            <code>from sklearn.model_selection import cross_val_score</code>
+        </section>
+        
+        <section class="main-section" id="Common_Algorithms">
+            <header>Common Algorithms</header>
+            <p>Popular machine learning algorithms include:</p>
+            <ul>
+                <li>Linear Regression</li>
+                <li>Logistic Regression</li>
+                <li>Decision Trees</li>
+                <li>Support Vector Machines</li>
+                <li>K-Nearest Neighbors</li>
+            </ul>
+            <p>Each algorithm has its own strengths for different types of data.</p>
+            <code>model = LinearRegression()</code>
+        </section>
+        
+        <section class="main-section" id="Overfitting_and_Underfitting">
+            <header>Overfitting and Underfitting</header>
+            <p><strong>Overfitting</strong>: Model performs well on training data but poorly on new data.</p>
+            <p><strong>Underfitting</strong>: Model is too simple and fails to capture patterns in the data.</p>
+            <p>Finding the right balance is crucial for a good model.</p>
+            <code>model = RandomForestClassifier()</code>
+        </section>
+        
+        <section class="main-section" id="Data_Preprocessing">
+            <header>Data Preprocessing</header>
+            <p>Data Preprocessing is the first step in building a machine learning model.</p>
+            <p>Common steps include handling missing values, scaling, and splitting the dataset.</p>
+            <p>Feature scaling ensures features contribute equally to the model.</p>
+            <p>Data is often split into training and testing sets for evaluation.</p>
+            <code>X_train, X_test, y_train, y_test = train_test_split(X, y)</code>
+        </section>
+
+    </main>
+
+</body>
+</html>
